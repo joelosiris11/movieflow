@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieFlow Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="top-bar">
+        <h1>MovieFlow</h1>
+        <div class="role-select">
+            Rol:
+            <select id="roleSelector">
+                <option value="artist">Artista</option>
+                <option value="supervisor">Supervisor</option>
+                <option value="director">Director</option>
+            </select>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="shotList" class="panel">
+            <h2 id="panelTitle">Tomas</h2>
+            <div id="shots"></div>
+        </section>
+
+        <section id="adminPanel" class="panel">
+            <h2>Administración</h2>
+            <form id="newShotForm">
+                <input type="text" id="shotName" placeholder="Nombre de la toma" required>
+                <button type="submit">Agregar Toma</button>
+            </form>
+            <form id="newDeptForm">
+                <input type="text" id="deptName" placeholder="Nuevo departamento">
+                <button type="submit">Agregar Dept</button>
+            </form>
+            <div id="departments"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
